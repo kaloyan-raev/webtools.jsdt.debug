@@ -7,7 +7,6 @@ Bundle-Activator: org.eclipse.wst.jsdt.debug.internal.rhino.ui.RhinoUIPlugin
 Bundle-Vendor: %providerName
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
- org.eclipse.jdt.launching,
  org.eclipse.debug.core,
  org.eclipse.debug.ui,
  org.eclipse.wst.jsdt.core,

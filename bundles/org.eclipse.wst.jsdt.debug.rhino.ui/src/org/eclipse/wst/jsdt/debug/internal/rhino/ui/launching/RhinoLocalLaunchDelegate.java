@@ -44,10 +44,6 @@ import org.eclipse.debug.core.ILaunch;
 import org.eclipse.debug.core.ILaunchConfiguration;
 import org.eclipse.debug.core.model.IProcess;
 import org.eclipse.debug.core.model.LaunchConfigurationDelegate;
-import org.eclipse.jdt.internal.launching.StandardVMType;
-import org.eclipse.jdt.launching.IVMInstall;
-import org.eclipse.jdt.launching.JavaRuntime;
-import org.eclipse.jdt.launching.SocketUtil;
 import org.eclipse.osgi.util.NLS;
 import org.eclipse.wst.jsdt.core.IJavaScriptModelMarker;
 import org.eclipse.wst.jsdt.core.ITypeRoot;
@@ -55,6 +51,7 @@ import org.eclipse.wst.jsdt.core.JavaScriptCore;
 import org.eclipse.wst.jsdt.debug.core.jsdi.VirtualMachine;
 import org.eclipse.wst.jsdt.debug.core.jsdi.connect.AttachingConnector;
 import org.eclipse.wst.jsdt.debug.core.jsdi.connect.Connector;
+import org.eclipse.wst.jsdt.debug.core.jsdi.connect.SocketUtil;
 import org.eclipse.wst.jsdt.debug.internal.core.model.JavaScriptDebugTarget;
 import org.eclipse.wst.jsdt.debug.internal.rhino.jsdi.connect.HostArgument;
 import org.eclipse.wst.jsdt.debug.internal.rhino.jsdi.connect.PortArgument;
@@ -62,6 +59,9 @@ import org.eclipse.wst.jsdt.debug.internal.rhino.jsdi.connect.RhinoAttachingConn
 import org.eclipse.wst.jsdt.debug.internal.rhino.ui.ILaunchConstants;
 import org.eclipse.wst.jsdt.debug.internal.rhino.ui.RhinoUIPlugin;
 import org.eclipse.wst.jsdt.debug.internal.rhino.ui.refactoring.Refactoring;
+import org.eclipse.wst.jsdt.launching.IVMInstall;
+import org.eclipse.wst.jsdt.launching.JavaRuntime;
+import org.eclipse.wst.jsdt.launching.StandardVMType;
 import org.mozilla.javascript.JavaScriptException;
 import org.osgi.framework.Bundle;
 
